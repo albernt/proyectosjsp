@@ -9,7 +9,9 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
+import javax.servlet.annotation.WebServlet;
 
+@WebServlet(name = "NewProyectoServlet", urlPatterns = "/NewProyectoServlet")
 public class NewProyectoServlet extends HttpServlet {
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         request.getRequestDispatcher("newProyecto.jsp").forward(request, response);

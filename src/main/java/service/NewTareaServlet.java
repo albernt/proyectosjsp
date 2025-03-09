@@ -11,7 +11,9 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
+import javax.servlet.annotation.WebServlet;
 
+@WebServlet(name = "NewTareaServlet", urlPatterns = "/NewTareaServlet")
 public class NewTareaServlet extends HttpServlet {
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         int idProyecto = Integer.parseInt(request.getParameter("idProyecto"));

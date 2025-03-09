@@ -1,0 +1,11 @@
+entities\Tarea.class
+service\ListProyectosServlet.class
+service\ListTareasServlet.class
+dao\ProyectoDAO.class
+service\NewTareaServlet.class
+service\DeleteTareaServlet.class
+util\HibernateUtil.class
+service\NewProyectoServlet.class
+entities\Proyecto.class
+dao\TareaDAO.class
+service\DeleteProyectoServlet.class

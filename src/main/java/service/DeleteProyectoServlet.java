@@ -6,7 +6,9 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
+import javax.servlet.annotation.WebServlet;
 
+@WebServlet(name = "DeleteProyectoServlet", urlPatterns = "/DeleteProyectoServlet")
 public class DeleteProyectoServlet extends HttpServlet {
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         boolean isAdmin = "true".equals(request.getParameter("admin"));
